@@ -34,15 +34,6 @@ class ParkingBuilding(
         return levels.firstOrNull { it -> it.id == id }
     }
 
-    override fun toString(): String {
-        var levelsToStr = ""
-        levels.forEach {
-            levelsToStr += "LEVEL ID: $it.id, NAME: $it.name, COLOR: $it.color\n"
-            levelsToStr += "$it.parkingLot\n"
-        }
-        return levelsToStr
-    }
-
     fun findCarByPlate(plate:String): Boolean {
         levels.forEach {
             if(it.parkingLot.existsCarByPlate(plate)) return true
@@ -57,7 +48,7 @@ class ParkingBuilding(
     fun getAvailableLevels():String {
         var levelStr = ""
         getLevelsWithAvailableSpaces()
-                .forEachIndexed { index, level -> levelStr += "${index + 1}: ${level.name} (ID: $level.id)\n" }
+                .forEachIndexed { index, level -> levelStr += "${index + 1}. ${level.name} (ID: ${level.id})\n" }
         return """
             NIVELES DISPONIBLES:
                 $levelStr
@@ -69,5 +60,12 @@ class ParkingBuilding(
         return levels.firstOrNull { level -> level.parkingLot.existsCarByPlate(plate) }
     }
 
-
+    override fun toString(): String {
+        var levelsToStr = ""
+        levels.forEach {
+            levelsToStr += "LEVEL ID: ${it.id}, NAME: ${it.name}, COLOR: ${it.color}\n"
+            levelsToStr += "${it.parkingLot}\n"
+        }
+        return levelsToStr
+    }
 }

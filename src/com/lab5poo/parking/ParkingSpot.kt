@@ -4,7 +4,7 @@ class ParkingSpot(
         val id:String,
         var row: Int,
         var column: Int,
-        var isAvailable:Boolean = false
+        var isAvailable:Boolean = true
 ){
 
     fun changeState(){
