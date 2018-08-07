@@ -65,8 +65,8 @@ class ParkingBuilding(
 
     }
 
-    fun getLevelByCarPlate(plate: String): Level {
-
+    fun getLevelByCarPlate(plate: String): Level? {
+        return levels.firstOrNull { level -> level.parkingLot.existsCarByPlate(plate) }
     }
 
 

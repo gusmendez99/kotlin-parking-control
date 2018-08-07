@@ -43,7 +43,7 @@ fun getMenu(type:Int):String {
     }
 }
 
-fun main(args: Array<String>) {
+fun main(args: Array<String>) { //TODO: Fix logic about Car in Parking Spots
     val building:ParkingBuilding = ParkingBuilding()
     var wantContinues:Boolean = true
     var wantContinuesAdmin:Boolean = true
@@ -135,7 +135,18 @@ fun main(args: Array<String>) {
                                 }
 
                             } else { //There's a car with that plate at some level
-                                val carLevel:Level = building.getLevelByCarPlate(plate)
+                                val carLevel:Level? = building.getLevelByCarPlate(plate)
+                                if(carLevel != null){
+                                    val levelInfo = "NOMBRE: ${carLevel.name}, ID: ${carLevel.id}, COLOR: ${carLevel.color} "
+                                    println("La placa $plate se encuentra parqueada en el parqueo: $levelInfo")
+                                    val car = carLevel.parkingLot.findCarByPlate(plate)
+                                    if(car != null){
+                                        val parkingSpotCar = carLevel.parkingLot.getParkingSpotAt(car.row, car.column)!!
+                                        println("El carro se encuentra parqueado en el parque con ID: ${parkingSpotCar.id}")
+                                    }
+                                } else {
+                                    println("NO SE ENCONTRARON COINCIDENCIAS")
+                                }
                             }
                         }
                         2 -> {
@@ -155,7 +166,7 @@ fun readFilePath(): String? {
     val dialog = FileDialog(Frame(), "Seleccione el archivo a abrir")
     dialog.mode = FileDialog.LOAD
     dialog.isVisible = true
-    val file:String = ("$dialog.directory $dialog.file").replace("\\", "/")
+    val file:String = ("${dialog.directory}${dialog.file}").replace("\\", "/")
     println("$file seleccionado.")
     return file
 }
@@ -167,10 +178,11 @@ fun generateParkingLot(path: String?): ParkingLot? {
         val bufferedReader = File(path).bufferedReader()
         val atomicInteger:AtomicInteger = AtomicInteger()
         bufferedReader.useLines { lines -> lines.forEach {
+            println(it)
             val row = atomicInteger.getAndIncrement()
-            for(column in 0..it.length){
+            for(column in 0 until it.length - 1){
                 val parkingItem = it.substring(column, column + 1)
-                if(parkingItem != " "){
+                if(parkingItem != " " && parkingItem != "\n" && parkingItem != "\t"){
                     when(parkingItem){
                         WALL_CHARACTER -> {
                             parkingLot.addWall(Wall(row, column))

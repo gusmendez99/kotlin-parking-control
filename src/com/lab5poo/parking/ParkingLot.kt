@@ -12,14 +12,14 @@ class ParkingLot(
 ){
     fun addCar(car:Car):Boolean{ //TODO: complete fun addCar()
         if(hasParkingSpotAt(car.row, car.column)){
-            deleteParkingSpot(car.row, car.column)
+            setParkingSpotUnavailable(car.row, car.column)
         }
         cars.add(car)
         return true
     }
 
-    private fun deleteParkingSpot(row: Int, column: Int) {
-        parkingSpots.removeIf { it.row == row && it.column == column }
+    private fun setParkingSpotUnavailable(row: Int, column: Int) {
+        parkingSpots.filter { it.row == row && it.column == column }.forEach { parking -> parking.changeState() }
     }
 
     fun addWall(wall:Wall):Boolean{
@@ -44,16 +44,19 @@ class ParkingLot(
     }
 
     fun hasParkingSpotAt(row:Int, column:Int):Boolean{
-        return parkingSpots.any { it.row == row && it.column == column }
+        return parkingSpots.any { it.row == row && it.column == column && it.isAvailable}
     }
 
     fun getParkingSpotAt(row:Int, column:Int):ParkingSpot?{
-        return parkingSpots.firstOrNull { it.row == row && it.column == column }
+        return parkingSpots.firstOrNull { it.row == row && it.column == column && it.isAvailable}
     }
 
     fun findParkingSpotById(parkingSpotSelected: String): ParkingSpot? {
         return parkingSpots.firstOrNull { it.id == parkingSpotSelected }
+    }
 
+    fun findCarByPlate(plate:String):Car?{
+        return cars.firstOrNull{ it.plate == plate }
     }
 
 
@@ -76,7 +79,7 @@ class ParkingLot(
     }
 
     fun hasAvailableParkingSpots():Boolean {
-        return parkingSpots.isNotEmpty()
+        return parkingSpots.any {it.isAvailable}
     }
 
     override fun toString(): String {
