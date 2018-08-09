@@ -1,11 +1,27 @@
 package com.lab5poo.parking
 
 class ParkingSpot(
-        val id:String,
-        var row: Int,
-        var column: Int,
-        var isAvailable:Boolean = true
+        private val id:String,
+        private val row: Int,
+        private val column: Int,
+        private var isAvailable:Boolean = true
 ){
+
+    fun getId():String{
+        return id
+    }
+
+    fun getRow():Int {
+        return row
+    }
+
+    fun getColumn():Int {
+        return column
+    }
+
+    fun isAvailable():Boolean {
+        return isAvailable
+    }
 
     fun changeState(){
         isAvailable != isAvailable

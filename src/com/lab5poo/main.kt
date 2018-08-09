@@ -3,7 +3,6 @@ package com.lab5poo
 import com.lab5poo.car.Car
 import com.lab5poo.level.Level
 import com.lab5poo.parking.ParkingBuilding
-import com.lab5poo.parking.ParkingLot
 import com.lab5poo.parking.ParkingSpot
 import com.lab5poo.wall.WALL_CHARACTER
 import com.lab5poo.wall.Wall
@@ -11,6 +10,7 @@ import java.awt.FileDialog
 import java.awt.Frame
 import java.io.File
 import java.util.concurrent.atomic.AtomicInteger
+import kotlin.system.exitProcess
 
 const val MENU_MAIN = 0
 const val MENU_ADMIN = 1
@@ -46,8 +46,8 @@ fun getMenu(type:Int):String {
 fun main(args: Array<String>) { //TODO: Fix logic about Car in Parking Spots
     val building:ParkingBuilding = ParkingBuilding()
     var wantContinues:Boolean = true
-    var wantContinuesAdmin:Boolean = true
-    var wantContinuesDriver:Boolean = true
+    var wantContinuesAdmin:Boolean
+    var wantContinuesDriver:Boolean
 
     do {
         println(getMenu(MENU_MAIN))
@@ -57,6 +57,7 @@ fun main(args: Array<String>) { //TODO: Fix logic about Car in Parking Spots
         when(option){
             MENU_ADMIN -> { //MENU: ADMIN
                 do {
+                    wantContinuesAdmin = true
                     println(getMenu(MENU_ADMIN))
                     print("Ingrese una opcion: ")
                     val strOption = readLine()!!
@@ -69,10 +70,10 @@ fun main(args: Array<String>) { //TODO: Fix logic about Car in Parking Spots
                             val id: String = readLine()!!
                             print("Ingrese el color: ")
                             val color: String = readLine()!!
-                            print("Seleccione el archivo de estructura: ")
-                            val path:String? = readFilePath() //TODO: Check if a FileDialog has been opened/or set path with string
-                            val parkingLot:ParkingLot? = generateParkingLot(path)
-                            if(building.addLevel(Level(name, id, color, parkingLot!!))){
+                            print("Seleccione el archivo de estructura(Busque el cuadro de dialogo que se abrio): ")
+                            val path:String? = readFilePath()
+                            val parkingLevel:Level? = generateParkingLevel(name, id, color, path)
+                            if(building.addLevel(parkingLevel!!)){
                                 println("NIVEL $id AGREGADO EXISTOSAMENTE\n")
                             } else {
                                 println("Error al crear nivel, intenta de nuevo...")
@@ -88,7 +89,7 @@ fun main(args: Array<String>) { //TODO: Fix logic about Car in Parking Spots
                             }
                         }
                         3 -> { // Print all levels
-                            if(building.levels.isNotEmpty()){
+                            if(building.getLevels().isNotEmpty()){
                                 println(building)
                             } else {
                                 println("No hay niveles por ahora, agrega uno...")
@@ -102,6 +103,7 @@ fun main(args: Array<String>) { //TODO: Fix logic about Car in Parking Spots
             }
             MENU_DRIVER -> { //MENU: DRIVER
                 do {
+                    wantContinuesDriver = true
                     println(getMenu(MENU_DRIVER))
                     print("Ingrese una opcion: ")
                     val strOption = readLine()!!
@@ -111,20 +113,20 @@ fun main(args: Array<String>) { //TODO: Fix logic about Car in Parking Spots
                             print("Ingrese la placa del carro: ")
                             val plate = readLine()!!
                             if(!building.findCarByPlate(plate)){ //Car Register
-                                if(building.getAvailableLevels().isNotEmpty()){
+                                if(building.getLevelsWithAvailableSpaces().isNotEmpty()){
                                     println(building.getAvailableLevels())
                                     print("Ingrese un nivel : ")
                                     val levelStr = readLine()!!
                                     val levelSelected = levelStr.toInt()
                                     val currentLevel = building.getLevelsWithAvailableSpaces()[levelSelected - 1]
-                                    println(currentLevel.parkingLot)
+                                    println(currentLevel)
                                     print("Ingrese el id del parqueo: ")
                                     val parkingSpotStr = readLine()!!
-                                    val currentParkingSpot = currentLevel.parkingLot.findParkingSpotById(parkingSpotStr)
+                                    val currentParkingSpot = currentLevel.findParkingSpotById(parkingSpotStr)
                                     if(currentParkingSpot != null){ //Hour to add the Car in the ParkingLot of the Level
-                                        val currentLevelIndex = building.levels.indexOf(currentLevel)
-                                        building.levels.get(currentLevelIndex).parkingLot.addCar(
-                                                Car(plate, currentParkingSpot.row, currentParkingSpot.column))
+                                        val currentLevelIndex = building.getLevels().indexOf(currentLevel)
+                                        building.getLevels().get(currentLevelIndex).addCar(
+                                                Car(plate, currentParkingSpot.getRow(), currentParkingSpot.getColumn()))
                                         println("CARRO AGREGADO EN EL ESTACIONAMIENTO $parkingSpotStr")
                                     } else {
                                         println("Ocurrio un error, el id del parqueo seleccionado no es valido, " +
@@ -136,12 +138,14 @@ fun main(args: Array<String>) { //TODO: Fix logic about Car in Parking Spots
                             } else { //There's a car with that plate at some level
                                 val carLevel:Level? = building.getLevelByCarPlate(plate)
                                 if(carLevel != null){
-                                    val levelInfo = "NOMBRE: ${carLevel.name}, ID: ${carLevel.id}, COLOR: ${carLevel.color} "
+                                    val levelInfo = "NOMBRE: ${carLevel.getName()}, ID: ${carLevel.getId()}, " +
+                                            "COLOR: ${carLevel.getColor()} "
                                     println("La placa $plate se encuentra parqueada en el parqueo: $levelInfo")
-                                    val car = carLevel.parkingLot.findCarByPlate(plate)
+                                    val car = carLevel.findCarByPlate(plate)
                                     if(car != null){
-                                        val parkingSpotCar = carLevel.parkingLot.getParkingSpotAt(car.row, car.column)!!
-                                        println("El carro se encuentra parqueado en el parque con ID: ${parkingSpotCar.id}")
+                                        val parkingSpotCar = carLevel.getParkingSpotAt(car.getRow(), car.getColumn())!!
+                                        println("El carro se encuentra parqueado en el parqueo con ID: ${parkingSpotCar.getId()}")
+                                        println(carLevel)
                                     }
                                 } else {
                                     println("NO SE ENCONTRARON COINCIDENCIAS")
@@ -159,6 +163,8 @@ fun main(args: Array<String>) { //TODO: Fix logic about Car in Parking Spots
             }
         }
     } while(wantContinues)
+
+    exitProcess(1)
 }
 
 fun readFilePath(): String? {
@@ -170,9 +176,10 @@ fun readFilePath(): String? {
     return file
 }
 
-fun generateParkingLot(path: String?): ParkingLot? {
+fun generateParkingLevel(name:String, id:String, color:String, path: String?): Level? {
     if(!path.isNullOrEmpty()){
-        val parkingLot = ParkingLot()
+        val newLevel:Level = Level(name, id, color)
+
         var bufferedReader = File(path).bufferedReader()
         val atomicInteger:AtomicInteger = AtomicInteger()
         bufferedReader.useLines { lines -> lines.forEach {
@@ -183,19 +190,19 @@ fun generateParkingLot(path: String?): ParkingLot? {
                 if(parkingItem != " "){
                     when(parkingItem){
                         WALL_CHARACTER -> {
-                            parkingLot.addWall(Wall(row, column))
+                            newLevel.addWall(Wall(row, column))
                         }
                         else -> { //Means that is a parking
-                            if(!parkingLot.addParkingSpot(ParkingSpot(parkingItem, row, column))) return null
+                            if(!newLevel.addParkingSpot(ParkingSpot(parkingItem, row, column))) return null
                         }
                     }
                 }
             }
         }}
         bufferedReader = File(path).bufferedReader()
-        parkingLot.width = bufferedReader.readLines().first()!!.length
-        parkingLot.height = atomicInteger.get()
-        return parkingLot
+        newLevel.setWidth(bufferedReader.readLines().first()!!.length)
+        newLevel.setHeight(atomicInteger.get())
+        return newLevel
     }
     return null
 }

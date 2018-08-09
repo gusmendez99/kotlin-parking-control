@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb0bb744-e3dc-4a88-8cad-4a185f086f9a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/parkingLotTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/parkingLotTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Parqueo/com/lab5poo/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Parqueo/com/lab5poo/MainKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Parqueo/com/lab5poo/car/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Parqueo/com/lab5poo/car/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Parqueo/com/lab5poo/level/Level.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Parqueo/com/lab5poo/level/Level.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Parqueo/com/lab5poo/parking/ParkingBuilding.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Parqueo/com/lab5poo/parking/ParkingBuilding.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Parqueo/com/lab5poo/parking/ParkingLot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Parqueo/com/lab5poo/parking/ParkingSpot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Parqueo/com/lab5poo/parking/ParkingSpot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Parqueo/com/lab5poo/wall/Wall.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Parqueo/com/lab5poo/wall/Wall.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lab5poo/car/Car.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lab5poo/car/Car.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/lab5poo/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lab5poo/main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/lab5poo/parking/ParkingBuilding.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lab5poo/parking/ParkingBuilding.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lab5poo/parking/ParkingLot.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lab5poo/parking/ParkingLot.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lab5poo/parking/ParkingLot.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lab5poo/level/Level.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/lab5poo/parking/ParkingSpot.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lab5poo/parking/ParkingSpot.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lab5poo/wall/Wall.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lab5poo/wall/Wall.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,11 +30,20 @@
       <file leaf-file-name="main.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/lab5poo/main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="93" column="80" selection-start-line="93" selection-start-column="80" selection-end-line="93" selection-end-column="80" />
+            <state relative-caret-position="162">
+              <caret line="72" column="70" lean-forward="true" selection-start-line="72" selection-start-column="70" selection-end-line="72" selection-end-column="70" />
               <folding>
-                <element signature="e#21#384#0" expanded="true" />
+                <element signature="e#21#379#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParkingSpot.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lab5poo/parking/ParkingSpot.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -33,8 +51,8 @@
       <file leaf-file-name="ParkingBuilding.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/lab5poo/parking/ParkingBuilding.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14">
-              <caret line="51" column="18" lean-forward="true" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+            <state relative-caret-position="42">
+              <caret line="47" column="36" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -42,8 +60,11 @@
       <file leaf-file-name="Level.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/lab5poo/level/Level.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="25" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="7" selection-end-column="25" />
+            <state relative-caret-position="807">
+              <caret line="116" column="44" lean-forward="true" selection-start-line="116" selection-start-column="44" selection-end-line="116" selection-end-column="44" />
+              <folding>
+                <element signature="e#27#159#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,7 +82,17 @@
     <findStrings>
       <find>AGREGADO</find>
       <find>NIVELES DIS</find>
+      <find>.isAvailable</find>
+      <find>.color</find>
+      <find>la placa del</find>
+      <find>La placa</find>
     </findStrings>
+    <replaceStrings>
+      <replace>.isAvailable()</replace>
+      <replace>.getId()</replace>
+      <replace>.getName()</replace>
+      <replace>.getColor()</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -71,13 +102,13 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/parking/level/Level.kt" />
         <option value="$PROJECT_DIR$/src/com/parking/car/Car.kt" />
-        <option value="$PROJECT_DIR$/src/com/lab5poo/level/Level.kt" />
-        <option value="$PROJECT_DIR$/src/com/lab5poo/car/Car.kt" />
         <option value="$PROJECT_DIR$/src/com/lab5poo/parking/Parking.kt" />
-        <option value="$PROJECT_DIR$/src/com/lab5poo/wall/Wall.kt" />
         <option value="$PROJECT_DIR$/parkingLotTest.txt" />
-        <option value="$PROJECT_DIR$/src/com/lab5poo/parking/ParkingSpot.kt" />
         <option value="$PROJECT_DIR$/src/com/lab5poo/parking/ParkingLot.kt" />
+        <option value="$PROJECT_DIR$/src/com/lab5poo/car/Car.kt" />
+        <option value="$PROJECT_DIR$/src/com/lab5poo/wall/Wall.kt" />
+        <option value="$PROJECT_DIR$/src/com/lab5poo/parking/ParkingSpot.kt" />
+        <option value="$PROJECT_DIR$/src/com/lab5poo/level/Level.kt" />
         <option value="$PROJECT_DIR$/src/com/lab5poo/parking/ParkingBuilding.kt" />
         <option value="$PROJECT_DIR$/src/com/lab5poo/main.kt" />
       </list>
@@ -94,8 +125,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -157,7 +189,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -260,26 +291,56 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4009901" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32838285" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31023103" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32838285" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2685325" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18910742" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24962178" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.08415841" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.6072607" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.6072607" />
       <window_info anchor="right" id="Code Iris" order="3" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4009901" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27231467" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.6072607" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32838285" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="right" id="Code Iris" order="7" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32838285" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info id="simpleUML" order="7" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -292,10 +353,37 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/lab5poo/main.kt">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="93" column="80" selection-start-line="93" selection-start-column="80" selection-end-line="93" selection-end-column="80" />
+          <folding>
+            <element signature="e#21#379#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lab5poo/parking/ParkingBuilding.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="18" lean-forward="true" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lab5poo/level/Level.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="25" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="7" selection-end-column="25" />
+          <folding>
+            <element signature="e#27#159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lab5poo/main.kt">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3128">
           <caret line="184" column="82" selection-start-line="184" selection-start-column="82" selection-end-line="184" selection-end-column="82" />
           <folding>
-            <element signature="e#21#384#0" expanded="true" />
+            <element signature="e#21#379#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -333,7 +421,7 @@
         <state relative-caret-position="68">
           <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
           <folding>
-            <element signature="e#21#384#0" expanded="true" />
+            <element signature="e#21#379#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -436,31 +524,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lab5poo/wall/Wall.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lab5poo/car/Car.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/generated/_Collections.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="1397" column="34" selection-start-line="1397" selection-start-column="34" selection-end-line="1397" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lab5poo/parking/ParkingLot.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="97" column="57" selection-start-line="97" selection-start-column="57" selection-end-line="97" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -471,33 +538,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lab5poo/parking/ParkingLot.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#29#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lab5poo/wall/Wall.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lab5poo/car/Car.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lab5poo/parking/ParkingSpot.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        <state relative-caret-position="17">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lab5poo/level/Level.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="25" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="7" selection-end-column="25" />
+        <state relative-caret-position="807">
+          <caret line="116" column="44" lean-forward="true" selection-start-line="116" selection-start-column="44" selection-end-line="116" selection-end-column="44" />
+          <folding>
+            <element signature="e#27#159#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lab5poo/parking/ParkingBuilding.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="51" column="18" lean-forward="true" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+        <state relative-caret-position="42">
+          <caret line="47" column="36" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lab5poo/main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="93" column="80" selection-start-line="93" selection-start-column="80" selection-end-line="93" selection-end-column="80" />
+        <state relative-caret-position="162">
+          <caret line="72" column="70" lean-forward="true" selection-start-line="72" selection-start-column="70" selection-end-line="72" selection-end-column="70" />
           <folding>
-            <element signature="e#21#384#0" expanded="true" />
+            <element signature="e#21#379#0" expanded="true" />
           </folding>
         </state>
       </provider>
