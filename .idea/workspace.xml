@@ -3,19 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="eb0bb744-e3dc-4a88-8cad-4a185f086f9a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Parqueo/com/lab5poo/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Parqueo/com/lab5poo/MainKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Parqueo/com/lab5poo/car/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Parqueo/com/lab5poo/car/Car.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Parqueo/com/lab5poo/level/Level.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Parqueo/com/lab5poo/level/Level.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Parqueo/com/lab5poo/parking/ParkingBuilding.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Parqueo/com/lab5poo/parking/ParkingBuilding.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Parqueo/com/lab5poo/parking/ParkingLot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Parqueo/com/lab5poo/parking/ParkingSpot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Parqueo/com/lab5poo/parking/ParkingSpot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Parqueo/com/lab5poo/wall/Wall.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Parqueo/com/lab5poo/wall/Wall.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lab5poo/car/Car.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lab5poo/car/Car.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lab5poo/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lab5poo/main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lab5poo/parking/ParkingBuilding.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lab5poo/parking/ParkingBuilding.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lab5poo/parking/ParkingLot.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lab5poo/level/Level.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lab5poo/parking/ParkingSpot.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lab5poo/parking/ParkingSpot.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lab5poo/wall/Wall.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lab5poo/wall/Wall.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,50 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/lab5poo/main.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="72" column="70" lean-forward="true" selection-start-line="72" selection-start-column="70" selection-end-line="72" selection-end-column="70" />
-              <folding>
-                <element signature="e#21#379#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParkingSpot.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lab5poo/parking/ParkingSpot.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParkingBuilding.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lab5poo/parking/ParkingBuilding.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="47" column="36" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Level.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lab5poo/level/Level.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="807">
-              <caret line="116" column="44" lean-forward="true" selection-start-line="116" selection-start-column="44" selection-end-line="116" selection-end-column="44" />
-              <folding>
-                <element signature="e#27#159#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -107,10 +51,10 @@
         <option value="$PROJECT_DIR$/src/com/lab5poo/parking/ParkingLot.kt" />
         <option value="$PROJECT_DIR$/src/com/lab5poo/car/Car.kt" />
         <option value="$PROJECT_DIR$/src/com/lab5poo/wall/Wall.kt" />
-        <option value="$PROJECT_DIR$/src/com/lab5poo/parking/ParkingSpot.kt" />
         <option value="$PROJECT_DIR$/src/com/lab5poo/level/Level.kt" />
         <option value="$PROJECT_DIR$/src/com/lab5poo/parking/ParkingBuilding.kt" />
         <option value="$PROJECT_DIR$/src/com/lab5poo/main.kt" />
+        <option value="$PROJECT_DIR$/src/com/lab5poo/parking/ParkingSpot.kt" />
       </list>
     </option>
   </component>
@@ -280,7 +224,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -293,10 +236,10 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.31023103" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32838285" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.11716171" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18910742" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18910742" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24962178" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.08415841" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -373,7 +316,26 @@
         <state relative-caret-position="119">
           <caret line="7" column="25" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="7" selection-end-column="25" />
           <folding>
-            <element signature="e#27#159#0" expanded="true" />
+            <element signature="n#!!block;n#getId#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#getName#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#getColor#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#setHeight#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#setWidth#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#addCar#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#setParkingSpotUnavailable#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#addWall#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#addParkingSpot#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#hasWallAt#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#hasCarAt#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#hasParkingSpotAt#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#getParkingSpotAt#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#findParkingSpotById#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#findCarByPlate#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#isValidParkingSpot#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#hasRepeatedParkingSpots#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#existsCarByPlate#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#hasAvailableParkingSpots#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#toString#0;n#!!block;n#Level#0" />
           </folding>
         </state>
       </provider>
@@ -548,10 +510,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lab5poo/main.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="72" column="70" lean-forward="true" selection-start-line="72" selection-start-column="70" selection-end-line="72" selection-end-column="70" />
+          <folding>
+            <element signature="e#21#379#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lab5poo/wall/Wall.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        <state relative-caret-position="68">
+          <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lab5poo/parking/ParkingSpot.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -562,36 +541,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lab5poo/parking/ParkingSpot.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lab5poo/level/Level.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="807">
-          <caret line="116" column="44" lean-forward="true" selection-start-line="116" selection-start-column="44" selection-end-line="116" selection-end-column="44" />
+        <state relative-caret-position="357">
+          <caret line="108" column="5" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="108" selection-end-column="5" />
           <folding>
-            <element signature="e#27#159#0" expanded="true" />
+            <element signature="n#!!block;n#getId#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#getName#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#getColor#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#setHeight#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#setWidth#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#addCar#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#setParkingSpotUnavailable#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#addWall#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#addParkingSpot#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#hasWallAt#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#hasCarAt#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#hasParkingSpotAt#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#getParkingSpotAt#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#findParkingSpotById#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#findCarByPlate#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#isValidParkingSpot#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#hasRepeatedParkingSpots#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#existsCarByPlate#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#hasAvailableParkingSpots#0;n#!!block;n#Level#0" />
+            <element signature="n#!!block;n#toString#0;n#!!block;n#Level#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lab5poo/parking/ParkingBuilding.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="47" column="36" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lab5poo/main.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="72" column="70" lean-forward="true" selection-start-line="72" selection-start-column="70" selection-end-line="72" selection-end-column="70" />
+        <state relative-caret-position="119">
+          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="64" selection-end-column="5" />
           <folding>
-            <element signature="e#21#379#0" expanded="true" />
+            <element signature="n#!!block;n#getLevels#0;n#!!block;n#ParkingBuilding#0" />
+            <element signature="n#!!block;n#addLevel#0;n#!!block;n#ParkingBuilding#0" />
+            <element signature="n#!!block;n#deleteLevel#0;n#!!block;n#ParkingBuilding#0" />
+            <element signature="n#!!block;n#existsLevel#0;n#!!block;n#ParkingBuilding#0" />
+            <element signature="n#!!block;n#getLevelById#0;n#!!block;n#ParkingBuilding#0" />
+            <element signature="n#!!block;n#findCarByPlate#0;n#!!block;n#ParkingBuilding#0" />
+            <element signature="n#!!block;n#getLevelsWithAvailableSpaces#0;n#!!block;n#ParkingBuilding#0" />
+            <element signature="n#!!block;n#getAvailableLevels#0;n#!!block;n#ParkingBuilding#0" />
+            <element signature="n#!!block;n#getLevelByCarPlate#0;n#!!block;n#ParkingBuilding#0" />
+            <element signature="n#!!block;n#toString#0;n#!!block;n#ParkingBuilding#0" />
           </folding>
         </state>
       </provider>
